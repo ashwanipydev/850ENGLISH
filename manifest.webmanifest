@@ -1,0 +1,20 @@
+{
+  "name": "850 Basic English",
+  "short_name": "850 Basic",
+  "description": "Learn Ogden's 850 Basic English words with Hindi glosses — flashcards, quizzes, listening, typing and spaced repetition. Works offline.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f5f2",
+  "theme_color": "#2f6df6",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='110' fill='%232f6df6'/%3E%3Ctext x='256' y='336' font-size='190' font-family='Arial, sans-serif' font-weight='bold' fill='white' text-anchor='middle'%3E850%3C/text%3E%3C/svg%3E",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
