@@ -10,6 +10,7 @@
     { id: 'quiz', name: 'Quiz', emoji: '❓', desc: '4-choice questions' },
     { id: 'listen', name: 'Listening', emoji: '🔊', desc: 'Hear it, pick it' },
     { id: 'typing', name: 'Typing', emoji: '⌨️', desc: 'Type the English word' },
+    { id: 'spelling', name: 'Spelling', emoji: '🔤', desc: 'Build the word, letter by letter' },
     { id: 'review', name: 'Review', emoji: '🔁', desc: 'Spaced repetition' },
     { id: 'stats', name: 'Stats', emoji: '📊', desc: 'Progress & mastery' }
   ];

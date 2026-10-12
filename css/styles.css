@@ -623,6 +623,51 @@ body {
 .type-input.bad { border-color: var(--bad); background: var(--bad-soft); }
 .type-input.good { border-color: var(--good); background: var(--good-soft); }
 
+.spelling-layout {
+  min-height: min(70vh, 680px);
+  display: flex;
+  flex-direction: column;
+}
+.spelling-content { display: flex; flex: 1; flex-direction: column; }
+.spelling-prompt { text-align: center; }
+.spelling-category { margin-bottom: 4px; color: var(--text-2); font-size: 12px; font-weight: 700; }
+.spelling-prompt .prompt-hindi { font-size: 26px; font-weight: 800; overflow-wrap: anywhere; }
+.spelling-prompt .prompt-sub { margin-top: 5px; color: var(--text-2); }
+.spelling-pron { margin-top: 8px; color: var(--text-2); }
+.spelling-hints { display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; margin-top: 10px; }
+.spelling-hints .btn { min-height: 38px; padding: 6px 10px; font-size: 13px; }
+.spelling-hints .btn[disabled] { display: none; }
+.spelling-example-hint { margin-top: 10px; text-align: center; }
+.spelling-board { margin-top: auto; padding-top: 22px; }
+.spelling-slots { display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; }
+.spelling-slot, .spelling-tile {
+  width: clamp(40px, 11vw, 52px);
+  height: 50px;
+  border: 1.5px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  touch-action: manipulation;
+}
+.spelling-slot { border-bottom: 3px solid var(--accent); cursor: pointer; }
+.spelling-slot[aria-current="true"] { outline: 2px solid var(--accent); outline-offset: 2px; }
+.spelling-tray { display: grid; grid-template-columns: repeat(auto-fit, minmax(42px, 1fr)); gap: 8px; max-width: 420px; margin: 16px auto 0; }
+.spelling-tile { width: 100%; min-width: 42px; box-shadow: var(--shadow); cursor: pointer; }
+.spelling-tile:active { transform: translateY(2px); }
+.spelling-tile.shake { animation: spelling-shake 0.28s ease-in-out; border-color: var(--bad); color: var(--bad); }
+.spelling-count { margin: 8px 0 0; color: var(--text-2); font-size: 13px; text-align: center; }
+.spelling-timer { margin-left: auto; color: var(--warn); font-variant-numeric: tabular-nums; font-weight: 700; }
+.spelling-success { margin-top: 14px; }
+.spelling-success .fc-word { text-align: center; }
+.spelling-success .fc-pron { text-align: center; }
+.spelling-success .fc-ex { margin-top: 9px; }
+.spelling-score { margin-top: 10px; color: var(--good); font-weight: 700; text-align: center; }
+@keyframes spelling-shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+
 .diff { margin-top: 10px; font-size: 17px; font-weight: 700; letter-spacing: 0.03em; }
 .diff .d-ok { color: var(--good); }
 .diff .d-bad { color: var(--bad); text-decoration: line-through; }

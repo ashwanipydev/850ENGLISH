@@ -299,7 +299,8 @@
       if (correct) { st.learned[word.id] = 1; }
       if (correct) {
         var before = S.xpToLevel(st.xp);
-        st.xp += S.xpFor(word);
+        var award = typeof opts.xp === 'number' ? opts.xp : S.xpFor(word);
+        st.xp += Math.max(0, award);
         var after = S.xpToLevel(st.xp);
         if (after > before && !opts.quiet) {
           celebrate('Level ' + after + '!');

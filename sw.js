@@ -4,7 +4,7 @@
  */
 'use strict';
 
-var CACHE = 'b850-v1';
+var CACHE = 'b850-v2';
 var SHELL = [
   './',
   './index.html',
@@ -20,6 +20,7 @@ var SHELL = [
   './js/modes/flashcards.js',
   './js/modes/quiz.js',
   './js/modes/typing.js',
+  './js/modes/spelling.js',
   './js/modes/review.js',
   './js/modes/stats.js',
   './js/modes/settings.js'
